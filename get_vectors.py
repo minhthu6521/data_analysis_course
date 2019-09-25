@@ -2,10 +2,14 @@ import numpy as np
 
 def get_row_vectors(arr):
     arr = np.matrix(arr)
-    shape = np.shape(arr)[1]
-    return arr.reshape(1, shape)
+    shape = np.shape(arr)[0]
+    d = np.split(arr, shape)
+    return d
+
 
 def get_column_vectors(arr):
     arr = np.matrix(arr)
-    shape = np.shape(arr)[0]
-    return arr.reshape(shape, 1)
+    shape = np.shape(arr)[1] 
+    d = np.split(arr, shape, axis=1)
+    return d
+    

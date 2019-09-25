@@ -7,5 +7,5 @@ import numpy as np
     (3, "0 0 1 0 0; 0 1 0 1 0; 1 0 0 0 1; 0 1 0 1 0; 0 0 1 0 0"),
     (1, [[1]])
 ])
-def test_diamond(len, exptected):
-    assert np.array_equal(diamond(len), exptected) is True
+def test_diamond(len, expected):
+    assert np.array_equal(diamond(len), expected) is True

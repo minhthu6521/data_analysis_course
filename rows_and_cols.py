@@ -1,3 +1,6 @@
+'''
+Write two functions, get_rows and get_columns, that get a two dimensional array as parameter. They should return the list of rows and columns of the array, respectively. The rows and columns should be one dimensional arrays. You may use the transpose operation, which flips rows to columns, in your solution. The transpose is done by the T method:
+'''
 import numpy as np
 
 matrix = np.array([[5, 0, 3, 3],

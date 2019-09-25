@@ -1,6 +1,6 @@
 import pytest
 from diamond import diamond
-from numpy import np
+import numpy as np
 
 
 @pytest.mark.parametrize('len, expected', [
